@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="250" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="250" height="250" fill="white"/>
+  <g transform="translate(125,125) scale(1,-1)"
+      style="fill:none; stroke-width:1">
+    <path d="M -120,0 L 120,0 M 0,-120 L 0,120" stroke="gray"/>
+    <path d="M 100,0 C 100,0 70.7,0 35.4,35.4 S 0,100 0,100
+        S 0,70.7 -35.4,35.4 S -100,0 -100,0
+        S -70.7,0 -35.4,-35.4 S 0,-100 0,-100
+        S 0,-70.7 35.4,-35.4 S 100,0 100,0 Z"
+      stroke="black"/>
+  </g>
+</svg>
