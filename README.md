@@ -1,7 +1,7 @@
 Below are two SVG images. The first one has embedded JavaScript:
 
-![This is the alt text of the first image.](image.svg)
-![This is the alt text of the second image.](image-nojs.svg)
+![(this is the alt text of the first image)](image.svg)
+![(this is the alt text of the second image)](image-nojs.svg)
 
 On both Gogs and Gitea, the alt text is displayed instead of the images.
 Additionally, clicking on the alt text doesn't display the images
