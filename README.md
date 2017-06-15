@@ -3,9 +3,17 @@ Below are two SVG images. The first one has embedded JavaScript:
 ![(this is the alt text of the first image)](image.svg)
 ![(this is the alt text of the second image)](image-nojs.svg)
 
-On both Gogs and Gitea, the alt text is displayed instead of the images.
-Additionally, clicking on the alt text doesn't display the images
-either: the SVG source code is shown instead.
+On GitHub, Gogs and Gitea, the alt texts are displayed instead of the
+images. Unlike Firefox, Chromium also displays broken-image icons.
+
+When clicking on the alt texts, Gogs and Gitea display the raw source of
+the images (the images served as text/plain). GitHub instead displays a
+“blob” page in “rendered” view, with the image embedded as a data URL
+from an iframe. Although the JavaScript has not been removed from the
+first image, it is not interpreted by the browser. That blob page has
+buttons for switching between the rendered and source blob views, and a
+link to the raw file (served as text/plain from
+raw.githubusercontent.com).
 
 Tests:
 
