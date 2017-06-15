@@ -19,7 +19,7 @@ Tests:
 
 * [on github.com](https://github.com/edgar-bonet/test-svg-mime)
 * [on try.gogs.io](https://try.gogs.io/edgar/test-svg-mime)
-* [on try.gitea.io](https://try.gitea.io/edgar/test-svg-mine)
+* [on try.gitea.io](https://try.gitea.io/edgar/test-svg-mime)
 
 The issue has been reported:
 
