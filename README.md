@@ -23,5 +23,7 @@ Tests:
 
 The issue has been reported:
 
+* GitHub: [Fix relative SVG rendering](https://github.com/github/markup/issues/556)
 * Gogs: [SVG images are served with wrong MIME type](https://github.com/gogits/gogs/issues/4553)
 * Gitea: [Gitea can't render SVG files.](https://github.com/go-gitea/gitea/issues/1095)
+* GitLab: [Breakage in displaying SVG in the same repository](https://gitlab.com/gitlab-org/gitlab-ce/issues/17276)
