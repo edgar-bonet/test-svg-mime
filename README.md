@@ -23,5 +23,5 @@ Tests:
 
 The issue has been reported:
 
-* Gogs #4553: [SVG images are served with wrong MIME type](https://github.com/gogits/gogs/issues/4553)
-* Gitea #1095: [Gitea can't render SVG files.](https://github.com/go-gitea/gitea/issues/1095)
+* Gogs: [SVG images are served with wrong MIME type](https://github.com/gogits/gogs/issues/4553)
+* Gitea: [Gitea can't render SVG files.](https://github.com/go-gitea/gitea/issues/1095)
