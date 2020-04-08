@@ -3,8 +3,12 @@ Below are two SVG images. The first one has embedded JavaScript:
 ![(this is the alt text of the first image)](image.svg)
 ![(this is the alt text of the second image)](image-nojs.svg)
 
-On GitHub, Gogs and Gitea, the alt texts are displayed instead of the
-images. Unlike Firefox, Chromium also displays broken-image icons.
+On GitHub, both images are displayed, served from a different domain
+(raw.githubusercontent.com). The first image has his JavaScript stripped
+away. On Gogs and Gitea, the alt texts are displayed instead of the
+images. On Gogs, both alt texts are clickable. On Gitea only the first
+one is clickable. Unlike Firefox, Chromium also displays broken-image
+icons alongside the alt texts.
 
 When clicking on the alt texts, Gogs and Gitea display the raw source of
 the images (the images served as text/plain). GitHub instead displays a
@@ -18,7 +22,8 @@ raw.githubusercontent.com).
 Tests:
 
 * [on github.com](https://github.com/edgar-bonet/test-svg-mime)
-* [on try.gogs.io](https://try.gogs.io/edgar/test-svg-mime)
+* [on try.gogs.io](https://try.gogs.io/edgar/test-svg-mime) (requires
+  creating an account)
 * [on try.gitea.io](https://try.gitea.io/edgar/test-svg-mime)
 
 The issue has been reported:
