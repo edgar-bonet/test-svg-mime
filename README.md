@@ -1,4 +1,6 @@
-Below are two SVG images. The first one has embedded JavaScript:
+Below are two SVG images. The first one contains the text “JavaScript is
+OFF”, together with a script that changes “OFF” to “ON”. The second one
+has no JavaScript:
 
 ![(this is the alt text of the first image)](image.svg)
 ![(this is the alt text of the second image)](image-nojs.svg)
