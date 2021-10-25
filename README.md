@@ -9,22 +9,25 @@ On GitHub, both images are displayed, served as image/svg+xml from a
 different domain (raw.githubusercontent.com) with the header
 “Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline';
 sandbox”. Neither Firefox nor Chromium execute the script, even if the
-image is opened alone, in a new tab. Chromium's console warns that it
-“Blocked script execution [...] because the document's frame is
-sandboxed and the 'allow-scripts' permission is not set.”
+image is opened alone, in a new tab.
 
-On Gogs and Gitea, the alt texts are displayed instead of the images. On
-Gogs, both alt texts are clickable. On Gitea only the first one is
-clickable. Unlike Firefox, Chromium also displays broken-image icons
-alongside the alt texts.
+Gitea has the same behavior, except that the images are served from the
+same domain. The script is not executed, presumably thanks to the
+Content-Security-Policy header.
 
-When clicking on the alt texts, Gogs and Gitea display the raw source of
-the images (the images served as text/plain). When clicking on the
-images, GitHub instead displays a “blob” page in “rendered” view. This
-page contains an iframe served from render.githubusercontent.com, with
-the image included, as before, from raw.githubusercontent.com. That blob
-page has buttons for switching between the rendered and source blob
-views, and a link to the raw file from raw.githubusercontent.com.
+On Gogs, clickable alt texts are displayed instead of the images. Unlike
+Firefox, Chromium also displays broken-image icons alongside the alt
+texts.
+
+When clicking on the images, Gitea displays the raw images. GitHub
+instead displays a “blob” page in “rendered” view. This page contains an
+iframe served from render.githubusercontent.com, with the image
+included, as before, from raw.githubusercontent.com. That blob page has
+buttons for switching between the rendered and source blob views, and a
+link to the raw file from raw.githubusercontent.com.
+
+When clicking on the alt texts, Gogs displays the raw source of the
+images (the images served as text/plain).
 
 Tests:
 
